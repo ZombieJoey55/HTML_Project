@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign_Up</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="./Pictures/Harry_Potter_Logo.png" alt="Harry Potter Logo">
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./sign_up.html">Sign Up</a></li>
+                <li><a href="./houses.html">Houses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main section -->
+    <main>
+        <h2>Sign Up</h2>
+        <h3>&#128220 Basic Information</h3>
+        <hr>
+        <!-- Basic Information section -->
+        <section>
+            <form action="">
+                <!-- Date of Birth Entry -->
+                <div>
+                    <label for="birth">
+                        <p>Date of Birth:</p>
+                    </label>
+                    <input type="date" name="birth" id="birth" required>
+                </div>
+                <!-- Email Address Entry -->
+                <div>
+                    <label for="email">
+                        <p>Email Address:</p>
+                    </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <!-- Password Address Entry -->
+                <div>
+                    <label for="password">
+                        <p>Password (8 characters minimum):</p>
+                    </label>
+                    <input type="password" name="password" id="password" minlength="8" required>
+                </div>
+                <!-- First and Last Name Entry -->
+                <div>
+                    <p>
+                        <!-- First -->
+                        <label for="first">First Name:</label>
+                        <input type="text" name="first" id="first" required>
+                        <!-- Second -->
+                        <label for="last">Last Name:</label>
+                        <input type="text" name="last" id="last" required>
+                    </p>
+                </div>
+        </section>
+        <!-- Hogwarts-Related Information Section -->
+        <section>
+            <h3>&#127984 Hogwarts-Related Information</h3>
+            <hr>
+            <!-- Hogwarts House Entry -->
+            <p>Select your Hogwarts House: (If unsure, check out the <a href="./houses.html">houses</a> page)</p>
+            <div>
+                <input type="radio" name="house" id="gryffindor" value="gryffindor" required>
+                <label for="gryffindor">&#129409 Gryffindor</label>
+            </div>
+            <div>
+                <input type="radio" name="house" id="hufflepuff" value="hufflepuff" required>
+                <label for="hufflepuff">&#129441 Hufflepuff</label>
+            </div>
+            <div>
+                <input type="radio" name="house" id="ravenclaw" value="ravenclaw" required>
+                <label for="ravenclaw">&#129413 Ravenclaw</label>
+            </div>
+            <div>
+                <input type="radio" name="house" id="slytherin" value="slytherin" required>
+                <label for="slytherin">&#128013 Slytherin</label>
+            </div>
+            <!-- Favorite characters Entry -->
+            <p>
+                <label for="Fav_Char">&#129497 Who is your favorite character in Harry Potter?</label>
+            </p>
+            <textarea id="Fav_Char" rows="3" name="Fav_Char" placeholder="Type here" required></textarea>
+            <!-- Number of times read books -->
+            <p>
+                <label for="books">How many times have you read the Harry Potter books?</label>
+                <input type="number" placeholder="enter a number" id="books" name="books" min="0" required>
+            </p>
+            <!-- Number of times read books -->
+            <p>
+                <label for="movies">How many times have you watched the movies?</label>
+                <input type="number" placeholder="enter a number" id="movies" name="movies" min="0" required>
+            </p>
+        </section>
+        <section>
+            <!-- Fan Engagement Section -->
+            <h3>&#9889 Fan Engagement</h3>
+            <hr>
+            <!-- Media Entry -->
+            <p><label for="fan">What Harry Potter media do you engage with? (Pick all the apply: hold shift to select
+                    multiple options)</label></p>
+            <select name="fan" id="fan" multiple required>
+                <option value="" disabled selected>--Please choose an option--</option>
+                <option value="book">&#128214 Book Reader</option>
+                <option value="movie">&#127909 Movie Lover</option>
+                <option value="game">&#127918 Game Enthusiast</option>
+            </select>
+            <!-- How did you hear about our fan club Entry? -->
+            <p><label for="hear">How did you hear about our fan club?</label></p>
+            <select name="hear" id="hear" required>
+                <option value="" disabled selected>--Please choose an option--</option>
+                <option value="friend">&#129485 Friend Referral</option>
+                <option value="media">&#128241 Social Media</option>
+                <option value="online">&#128269 Online Search</option>
+                <option value="event">&#127917 Convention/Event</option>
+                <option value="newsletter">&#128232 Newsletter</option>
+                <option value="other">&#10067 Other</option>
+            </select>
+        </section>
+        <P><input type="checkbox" name="agree_tos" id="agree" required>
+            <label for="agree">I agree to the tos</label>
+        </P>
+        <button>Sign Up</button>
+        </form>
+    </main>
+    <footer>
+        <p>This is my website <sup>&reg;</sup></p>
+    </footer>
+</body>
+
+</html>
